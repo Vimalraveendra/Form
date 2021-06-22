@@ -12,7 +12,7 @@ html, body{
 
 .container{
     width:600px;
-    height: 500px;
+    /* height: 500px; */
     margin-top:20px;
     display:flex;
     justify-content: center;
@@ -24,9 +24,13 @@ html, body{
 
 .credentials{
     width:550px;
-    height: 500px;
+    /* height: 500px; */
     position: relative;
-    margin-top:70px;
+    margin-top:30px;
+}
+
+fieldset{
+    margin-bottom: 10px;
 }
 
 .first, .second{
@@ -35,14 +39,25 @@ html, body{
     /* background-color: aqua; */
 }
 
-.first label, .second label{
+.first label, .second label,p{
     position: absolute;
 }
 .lname2{
     left:340px;  
 }
 
-.first input, .second input{
+.first input[type='text'], .second input[type='text']{
    margin-left:10em;
    width:100%
+}
+.gender-container{
+    display:flex;
+}
+p{
+    margin:0;
+    padding:0;
+    margin-left:10px;
+}
+.gender{
+    margin-left:8.5em;
 }
