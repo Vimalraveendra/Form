@@ -46,9 +46,12 @@ fieldset{
     left:340px;  
 }
 
-.first input[type='text'], .second input[type='text']{
+.first input[type='text'], .second input[type='text'] {
    margin-left:10em;
    width:100%
+}
+.list{
+    width:100%;
 }
 .gender-container{
     display:flex;
@@ -60,4 +63,13 @@ p{
 }
 .gender{
     margin-left:8.5em;
+}
+
+.list-container{
+    display: flex;
+    width:99%; 
+}
+.list-details{
+    margin-left:9em;
+    width:100%; 
 }
