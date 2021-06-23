@@ -15,21 +15,25 @@ body {
 }
 
 .container {
-  width: 600px;
+  /* width: 600px; */
   /* height: 500px; */
   margin-top: 20px;
-  display: flex;
+
+  max-width: 1000px;
+  min-width: 500px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: #fff;
   box-shadow: 1px 3px 10px rgb(190, 186, 186);
 }
 
 .credentials {
-  width: 550px;
+  /* width: 550px; */
   /* height: 500px; */
   position: relative;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin: 10px;
 }
 
 fieldset {
@@ -41,9 +45,12 @@ fieldset {
 .second {
   display: flex;
   margin: 10px;
+
   /* background-color: aqua; */
 }
-
+.name {
+  display: flex;
+}
 .first label,
 .second label,
 p {
@@ -85,3 +92,37 @@ p {
 option {
   margin-left: 5px;
 }
+
+@media screen and (max-width: 539px) {
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 600px;
+    min-width: 300px;
+  }
+  .name {
+    margin-bottom: 5px;
+  }
+  .lname2 {
+    left: auto;
+  }
+}
+/* @media screen and (max-width: 368px) {
+  .second,
+  .first {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 400px;
+    min-width: 200px;
+  }
+  .name {
+    margin-bottom: 5px;
+  }
+  .lname2 {
+    left: auto;
+  }
+} */
