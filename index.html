@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -142,6 +141,26 @@
                                 <option value="Safari">
                             </datalist>
                         </div>
+                    </div>
+                    <div class="first">
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars" onmousedown="if(this.options.length>5){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;" >
+                        <option value="brak" selected>---brak---</option>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="audi">Audi</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="audi">Audi</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="audi">Audi</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    </div>
                     </div>
                 </fieldset>
 
